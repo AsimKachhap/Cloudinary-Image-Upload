@@ -8,6 +8,7 @@ import connectDb from "./utils/db.js";
 
 const app = express();
 dotenv.config();
+app.use(express.json());
 app.use(morgan("dev"));
 app.use(helmet());
 
