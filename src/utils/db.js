@@ -4,7 +4,7 @@ const connectDb = async () => {
   try {
     const connectionInstance = await mongoose.connect(process.env.MONGO_URI);
     console.log(
-      "Connected to MONO DB Host:",
+      "Connected to MONOGO DB Host:",
       connectionInstance.connection.host
     );
   } catch (error) {
